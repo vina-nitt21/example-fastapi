@@ -36,7 +36,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
     return verify_access_token(token, creds_exception)
 
 # you can use this function to fetch the user as well and not just call verify tokeen function
-# 2 hours takes 3 hours 
+
 
 # alembic - makes changes to database - ie, update schema and it reflects directly, sqlalchemy leaves a table
 # untouched if a table already exists, ie. alembic- incremental changes and track them. 
